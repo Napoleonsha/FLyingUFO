@@ -5,6 +5,7 @@ public class Controller : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private float jumpForce = 5f;
+    private int score;
 
     private void Awake()
     {
@@ -27,5 +28,16 @@ public class Controller : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("Score"))
+        {
+            score++;
+        }
     }
 }
