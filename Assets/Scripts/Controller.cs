@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
@@ -32,28 +33,37 @@ public class Controller : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+      if (PlayerPrefs.GetInt("Highscore") < score)
+      {
+         PlayerPrefs.SetInt("Highscore", score);
+         PlayerPrefs.Save();
+      }
+
+        if (collider.gameObject.CompareTag("Score"))
+        {
+            score++;
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
-            Time.timeScale = 0;
-            if (PlayerPrefs.GetInt("HighScore") < score)
-            {
-                PlayerPrefs.SetInt("Highscore", score);
-            }
-                
-        }
-        if (collision.gameObject.CompareTag("Score"))
-        {
-            score++;
+            SceneManager.LoadScene(0);
         }
     }
 
     private void Update()
     {
         scoreUI.text = score.ToString();
-        highscoreUI.text = PlayerPrefs.GetInt("HighScore").ToString();
+        highscoreUI.text = PlayerPrefs.GetInt("Highscore").ToString();
+        if (PlayerPrefs.GetInt("Highscore") < score)
+        {
+            PlayerPrefs.SetInt("Highscore", score);
+            PlayerPrefs.Save();
+        }
     }
     private void Start()
     {
