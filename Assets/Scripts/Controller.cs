@@ -51,7 +51,7 @@ public class Controller : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 
