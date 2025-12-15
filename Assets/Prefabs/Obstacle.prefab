@@ -222,8 +222,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7245380731456824403}
   - component: {fileID: 1607539678391484083}
-  - component: {fileID: 489751685656022310}
-  - component: {fileID: 6632661169269236773}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -263,48 +261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   lifeTime: 30
---- !u!65 &489751685656022310
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7604595204883658535}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 15.379462, y: 1.4120188, z: 1}
-  m_Center: {x: -7.189731, y: 8.075573, z: 0}
---- !u!65 &6632661169269236773
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7604595204883658535}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 12.103912, y: 0.65868115, z: 1}
-  m_Center: {x: -5.551956, y: -3.1508799, z: 0}
 --- !u!1 &8383394071565577196
 GameObject:
   m_ObjectHideFlags: 0

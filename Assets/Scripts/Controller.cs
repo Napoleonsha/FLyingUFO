@@ -45,15 +45,22 @@ public class Controller : MonoBehaviour
         {
             score++;
         }
+        if (collider.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject, 1);
+            SceneManager.LoadScene(1);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 1);
             SceneManager.LoadScene(1);
         }
     }
+
+
 
     private void Update()
     {
