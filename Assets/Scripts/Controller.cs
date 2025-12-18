@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
-using UnityEngine.SceneManagement;
+
 
 public class Controller : MonoBehaviour
 {
@@ -9,6 +9,11 @@ public class Controller : MonoBehaviour
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private TMP_Text highscoreUI;
     [SerializeField] private TMP_Text scoreUI;
+    [SerializeField] AudioSource SFX;
+    [SerializeField] AudioClip scoreSound;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] GameObject deathMenu;
+    [SerializeField] GameObject UI;
     private int score = 0;
 
     private void Awake()
@@ -45,18 +50,14 @@ public class Controller : MonoBehaviour
         {
             score++;
         }
-        if (collider.gameObject.CompareTag("Obstacle"))
-        {
-            Destroy(gameObject, 1);
-            SceneManager.LoadScene(1);
-        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Destroy(gameObject, 1);
-            SceneManager.LoadScene(1);
+            UI.SetActive(false);
+            deathMenu.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 

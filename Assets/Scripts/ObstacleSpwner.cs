@@ -16,7 +16,7 @@ public class ObstacleSpwner : MonoBehaviour
             {
                 Instantiate(obstacle, transform.position + new Vector3(0f, Random.Range(-4f, 5f), 0f), Quaternion.identity);
                 nextTime = Time.time + interval;
-                interval -= 0.01f;
+                interval -= 0.1f;
             }
         }
     }

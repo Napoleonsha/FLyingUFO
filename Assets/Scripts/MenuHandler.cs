@@ -39,4 +39,5 @@ public class MenuHandler : MonoBehaviour
         settings.SetActive(false);
         mainMenu.SetActive(true);
     }
+
 }
