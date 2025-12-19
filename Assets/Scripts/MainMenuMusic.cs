@@ -8,9 +8,9 @@ public class MainMenuMusic : MonoBehaviour
 
     public void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         if (audioSource == null || volume == null)
             return;
-        audioSource = GetComponent<AudioSource>();
         float savedVolume = PlayerPrefs.GetFloat("Volume", 1f);
         audioSource.volume = savedVolume;
         volume.value = savedVolume;

@@ -1136,17 +1136,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &623727062 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1477874667867668445, guid: 2424a29f3e50aaf46995c677e9d7658a, type: 3}
-  m_PrefabInstance: {fileID: 8120004649875808487}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5824f8d77fb2344bb3188b745437c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &739391866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,19 +2743,7 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 623727062}
-        m_TargetAssemblyTypeName: MainMenuMusic, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1439628978
 GameObject:
   m_ObjectHideFlags: 0
