@@ -49,6 +49,7 @@ public class Controller : MonoBehaviour
         if (collider.gameObject.CompareTag("Score"))
         {
             score++;
+            SFX.PlayOneShot(scoreSound);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -58,6 +59,7 @@ public class Controller : MonoBehaviour
             UI.SetActive(false);
             deathMenu.SetActive(true);
             Time.timeScale = 0;
+            SFX.PlayOneShot(deathSound);
         }
     }
 

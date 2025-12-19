@@ -1232,7 +1232,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 925865619}
         m_TargetAssemblyTypeName: MenuHandler, Assembly-CSharp
-        m_MethodName: exitSettings
+        m_MethodName: ExitSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2852,7 +2852,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 925865619}
         m_TargetAssemblyTypeName: MenuHandler, Assembly-CSharp
-        m_MethodName: enterSettings
+        m_MethodName: EnterSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3528,7 +3528,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 925865619}
         m_TargetAssemblyTypeName: MenuHandler, Assembly-CSharp
-        m_MethodName: noExit
+        m_MethodName: NoExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

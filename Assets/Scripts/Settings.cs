@@ -12,13 +12,13 @@ public class Settings : MonoBehaviour
         bool isFullScreen = PlayerPrefs.GetInt(fullScreenToggle, 1) == 1;
         Screen.fullScreen = isFullScreen;
     }
-    public void fullScreen(bool value)
+    public void FullScreen(bool value)
     {
         Screen.fullScreen = !Screen.fullScreen;
         PlayerPrefs.SetInt(fullScreenToggle, Screen.fullScreen ? 1 : 0);
         PlayerPrefs.Save();
     }
-    public void setLanguage(string code)
+    public void SetLanguage(string code)
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.GetLocale(code);
         PlayerPrefs.SetString("Locales", code);

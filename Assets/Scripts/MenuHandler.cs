@@ -23,18 +23,18 @@ public class MenuHandler : MonoBehaviour
         Application.Quit();
     }
 
-    public void noExit()
+    public void NoExit()
     {
         menuExit.SetActive(false);
         mainMenu.SetActive(true);
     }
 
-    public void enterSettings()
+    public void EnterSettings()
     {
         mainMenu.SetActive(false);
         settings.SetActive(true);
     }
-    public void exitSettings()
+    public void ExitSettings()
     {
         settings.SetActive(false);
         mainMenu.SetActive(true);

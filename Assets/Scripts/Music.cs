@@ -15,7 +15,7 @@ public class Music : MonoBehaviour
         audioSource.Play();
         
     }
-    public void setVolume(float volume)
+    public void SetVolume(float volume)
     {
         audioSource.volume = volume;
         PlayerPrefs.SetFloat("Volume", volume);

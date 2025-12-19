@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Pause : MonoBehaviour
+public class GameMenuManager : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject UI;
 
-    public void pause()
+    public void Pause()
     {
         UI.SetActive(false);
         pauseMenu.SetActive(true);
@@ -14,15 +14,21 @@ public class Pause : MonoBehaviour
 
     }
 
-    public void backToMenu ()
+    public void BackToMenu ()
     {
         SceneManager.LoadScene(0);
     }
 
-    public void exitPause()
+    public void ExitPause()
     {
         pauseMenu.SetActive(false);
         UI.SetActive(true);
         Time.timeScale = 1;
+    }
+
+    public void NewGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
     }
 }
