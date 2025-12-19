@@ -880,6 +880,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543365856}
   m_CullTransparentMesh: 1
+--- !u!1 &586907521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2436556495634182155, guid: 2424a29f3e50aaf46995c677e9d7658a, type: 3}
+  m_PrefabInstance: {fileID: 1440025326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &586907525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586907521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cad83afaad06145a3e92674923ae06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameMusic
 --- !u!1 &645975536
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,10 +3506,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1477874667867668445, guid: 2424a29f3e50aaf46995c677e9d7658a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2436556495634182155, guid: 2424a29f3e50aaf46995c677e9d7658a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 586907525}
   m_SourcePrefab: {fileID: 100100000, guid: 2424a29f3e50aaf46995c677e9d7658a, type: 3}
 --- !u!1 &1559529410
 GameObject:

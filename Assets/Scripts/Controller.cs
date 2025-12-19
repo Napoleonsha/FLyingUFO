@@ -62,9 +62,6 @@ public class Controller : MonoBehaviour
             SFX.PlayOneShot(deathSound);
         }
     }
-
-
-
     private void Update()
     {
         scoreUI.text = score.ToString();

@@ -1,9 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Music : MonoBehaviour
+public class GameMusic : MonoBehaviour
 {
-    [SerializeField] Slider volume;
     AudioSource audioSource;
 
     public void Awake()
@@ -11,14 +9,7 @@ public class Music : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         float savedVolume = PlayerPrefs.GetFloat("Volume", 1f);
         audioSource.volume = savedVolume;
-
         audioSource.Play();
-        
-    }
-    public void SetVolume(float volume)
-    {
-        audioSource.volume = volume;
-        PlayerPrefs.SetFloat("Volume", volume);
-        PlayerPrefs.Save();
+
     }
 }
