@@ -412,7 +412,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1931530497}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
-        m_MethodName: setLanguage
+        m_MethodName: SetLanguage
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2019,7 +2019,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1931530497}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
-        m_MethodName: fullScreen
+        m_MethodName: FullScreen
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2756,9 +2756,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 623727062}
-        m_TargetAssemblyTypeName: Music, Assembly-CSharp
-        m_MethodName: setVolume
-        m_Mode: 0
+        m_TargetAssemblyTypeName: MainMenuMusic, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4198,7 +4198,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1931530497}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
-        m_MethodName: setLanguage
+        m_MethodName: SetLanguage
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
